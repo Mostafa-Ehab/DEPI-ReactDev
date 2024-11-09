@@ -1,0 +1,255 @@
+/*
+** General tags
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+section {
+    padding: 96px 0;
+    /* margin: 0 10%; */
+}
+
+h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+** General classes
+*/
+.container {
+    margin: 0 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.star-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.star-container .line {
+    height: 4px;
+    width: 120px;
+    display: block;
+    border-radius: 2px;
+}
+
+.star-container .star svg {
+    width: 71px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.star-container.light-start .line {
+    background-color: #fff;
+}
+
+.star-container.light-start .star svg {
+    color: #fff;
+}
+
+.star-container.dark-start .line {
+    background-color: #000;
+}
+
+.star-container.dark-start .star svg {
+    color: #000;
+}
+
+/*
+** Navbar
+*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(44, 62, 80);
+    text-transform: uppercase;
+    padding: 24px 0;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav .logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav .logo a {
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/*
+** Header
+*/
+header .header-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(26, 188, 156);
+    padding: 200px 0;
+}
+
+header .header-container img {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 48px;
+}
+
+header h1 {
+    font-size: 64px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header p {
+    color: #fff;
+    font-size: 24px;
+}
+
+/*
+** Portfolio
+*/
+#portfolio .img-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#portfolio .img-container img {
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+#about {
+    background-color: rgb(26, 188, 156);
+    color: #fff;
+}
+
+#about .desc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+#about .download {
+    font-size: 20px;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    margin-top: 24px;
+    padding: 16px 28px;
+}
+
+#contact form {
+    width: 80%;
+}
+
+#contact label {
+    color: rgb(108, 117, 125);
+    font-size: 24px;
+    padding: 24px 2px;
+    display: block;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px rgb(108, 117, 125);
+    display: block;
+}
+
+#contact button {
+    font-size: 20px;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    margin-top: 24px;
+    background-color: rgb(26, 188, 156);
+    padding: 16px 28px;
+}
+
+/*
+** Footer
+*/
+footer {
+    background-color: rgb(44, 62, 80);
+    padding: 96px 0;
+    color: #fff;
+}
+
+footer .footer-container {
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+/*
+** Copyright
+*/
+.copyright {
+    background: rgb(26, 37, 47);
+    color: #fff;
+    text-align: center;
+    padding: 24px 0;
+}
