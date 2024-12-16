@@ -1,0 +1,6 @@
+1.  Void elements
+2.  EM is the size relative to the parent elements
+    REM is based on the root element.
+3.  No difference they have the same functionality.
+4.  Hoisting is a behaviour in JS where it moves all variables declarations to the top of the code so it's aware of the variables before there initialization
+5.  for..in iterates over keys (indexes in array) while for..of iterates over values.
